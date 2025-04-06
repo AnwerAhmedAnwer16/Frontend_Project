@@ -77,7 +77,6 @@
     </style>
 </head>
 <body>
-    <h1>Library Management System</h1>
     
     <div id="initial-form">
         <div class="form-group">
@@ -136,7 +135,7 @@
         var booksList = document.getElementById('books-list').querySelector('tbody');
 
         submitCountBtn.addEventListener('click', countSubmitting);
-        submitBooksBtn.addEventListener('click', handleBooksSubmit);
+        submitBooksBtn.addEventListener('click', submitting);
 
         function countSubmitting() {
             var count = parseInt(bookCountInput.value);
@@ -186,7 +185,7 @@
             }
         }
 
-        function handleBooksSubmit() {
+        function submitting() {
             books = [];
             var isValid = true;
             
